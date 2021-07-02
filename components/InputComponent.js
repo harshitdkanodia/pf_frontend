@@ -5,9 +5,7 @@ import { Row, Col } from "antd";
 
 function InputComponent({ placeholder, Icon }) {
   return (
-    <Col span={24}>
       <div>{Icon && <Input placeholder={placeholder} prefix={<Icon />} />}</div>
-    </Col>
   );
 }
 

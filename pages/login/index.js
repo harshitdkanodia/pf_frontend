@@ -4,7 +4,7 @@ import InputComponent from "../../components/InputComponent";
 import MailOutlined from "@ant-design/icons/MailOutlined";
 import PasswordComponent from "../../components/PasswordComponent";
 import ButtonComponent from "../../components/ButtonComponent";
-import LayoutComponent from "../../components/LayoutComponent";
+import LayoutComponent from "../../layouts/LayoutComponent";
 
 function index() {
   return (

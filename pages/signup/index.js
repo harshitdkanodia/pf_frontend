@@ -9,16 +9,16 @@ import CheckboxComponent from "../../components/CheckboxComponent";
 import ButtonComponent from "../../components/ButtonComponent";
 import Footer from "../../components/Footer";
 import { Row, Col, Space } from "antd";
-import LayoutComponent from "../../components/LayoutComponent";
+import LayoutComponent from "../../layouts/LayoutComponent";
+import Link from 'next/link';
+import {Path} from '../../controller/utilities';
 
 function index() {
   return (
     <LayoutComponent>
-      <Row>
-        <Row gutter={32}>
-          {/* <Space size={"large"} direction="vertical"> */}
+      <Row align="center">
+        <Space direction="vertical" size={16} style={{ width: "90%" }}>
           <InputComponent placeholder="Email" Icon={MailOutlined} />
-          {/* </Space> */}
           <InputComponent placeholder="Phone" Icon={PhoneOutlined} />
           <PasswordComponent placeholder="Passowrd" />
           <DateComponent />
@@ -26,18 +26,23 @@ function index() {
           <CheckboxComponent checkboxText="Subscribe to mobile updatess" />
           <CheckboxComponent checkboxText="Subscribe to newsletter" />
           <ButtonComponent buttonText="SIGN UP" />
-        </Row>
-        <Row>
-          <span>-OR-</span>
-          <div>
-            <span>SIGN UP WITH</span>
-          </div>
-          <div>
-            <span className="icon icon-alipay" />
-            <span className="icon icon-taobao" />
-            <span className="icon icon-weibo" />
-          </div>
-        </Row>
+          <Row align="center">
+            <div>
+              <span>-OR-</span>
+            </div>
+            <div>
+              <span>SIGN UP WITH</span>
+            </div>
+            {/* <div>
+              <span className="icon icon-alipay" />
+              <span className="icon icon-taobao" />
+              <span className="icon icon-weibo" />
+            </div> */}
+          </Row>
+          <Row align="center">
+            <Link href={Path('/login')}>Already membership ? Login</Link>
+          </Row>
+        </Space>
       </Row>
     </LayoutComponent>
   );
