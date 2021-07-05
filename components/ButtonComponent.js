@@ -17,12 +17,14 @@
 // export default Button;
 import React from "react";
 import { Button } from "antd";
+import "antd/lib/button/style/index.css";
+import styles from "../styles/button.module.css";
 
-function ButtonComponent({ buttonText }) {
+function ButtonComponent({ children, shape, icon, size, type }) {
   return (
     <div>
-      <Button type="primary" block>
-        {buttonText}
+      <Button type={type} shape={shape} icon={icon} size={size} block>
+        {children}
       </Button>
     </div>
   );

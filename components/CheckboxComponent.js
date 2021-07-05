@@ -1,10 +1,12 @@
 import React from "react";
 import { Checkbox } from "antd";
 
-function CheckboxComponent({ checkboxText }) {
+function CheckboxComponent({ checkboxText, link }) {
   return (
     <div>
-      <Checkbox>{checkboxText}</Checkbox>
+      <Checkbox>
+        {checkboxText} {link}
+      </Checkbox>
     </div>
   );
 }
