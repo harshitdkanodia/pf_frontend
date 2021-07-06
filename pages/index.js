@@ -5,11 +5,5 @@ import Header from "../components/Link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Header />
-
-      <Footer />
-    </div>
-  );
+  return <div className={styles.container}></div>;
 }

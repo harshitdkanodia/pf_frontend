@@ -4,3 +4,12 @@
   width: "100%";
   height: "60px";
 }
+
+.footer_item {
+  position: fixed !important;
+  bottom: 3vh !important;
+}
+
+.footer_icons {
+  display: block !important;
+}

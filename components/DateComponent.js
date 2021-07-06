@@ -1,10 +1,11 @@
 import { DatePicker } from "antd";
 import React from "react";
+import styles from "../styles/Datepicker.module.css";
 
 function DateComponent() {
   return (
     <div>
-      <DatePicker />
+      <DatePicker className={styles.datepicker} />
     </div>
   );
 }

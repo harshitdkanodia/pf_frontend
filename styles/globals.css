@@ -14,14 +14,10 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #ffffff !important;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
-}
-
-.ant-input {
-  background-color: black !important;
 }

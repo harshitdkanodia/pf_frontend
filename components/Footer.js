@@ -9,20 +9,24 @@ import { Row, Col, Space } from "antd";
 export default function Footer() {
   return (
     <div className="footer">
-      <Row justify="center" align="bottom">
-        <Row justify="space-between" style={{ width: "90%" }}>
+      <Row justify="center">
+        <Row
+          className={styles.footer_item}
+          justify="space-between"
+          style={{ width: "90%" }}
+        >
           <div>
-            <HomeOutlined />
+            <HomeOutlined className={styles.footer_icons} />
             Home
           </div>
           <div>
-            <SearchOutlined /> Search
+            <SearchOutlined className={styles.footer_icons} /> Search
           </div>
           <div>
-            <SearchOutlined /> Distribute
+            <SearchOutlined className={styles.footer_icons} /> Distribute
           </div>
           <div>
-            <SearchOutlined /> Festival
+            <SearchOutlined className={styles.footer_icons} /> Festivals
           </div>
         </Row>
       </Row>
