@@ -14,7 +14,6 @@ import {
   FacebookFilled,
   TwitterOutlined,
 } from "@ant-design/icons";
-import AuthComponent from "../../components/AuthComponent";
 
 function index() {
   return (
